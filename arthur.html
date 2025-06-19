@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EpicHorz - Inovando o Futuro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1e1e2f;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; }
+    nav {
+      background-color: #29293d;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1e1e2f;
+    }
+    .services, .portfolio, .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex: 1 1 calc(33% - 40px);
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      padding: 10px;
+      background-color: #1e1e2f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .card { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EpicHorz</h1>
+    <p>Inovando o Futuro com Tecnologia de Ponta</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre a EpicHorz</h2>
+    <p>A EpicHorz é uma empresa especializada em soluções tecnológicas, desenvolvimento de software e inovação digital. Fundada por especialistas em engenharia e design, nossa missão é transformar ideias em produtos incríveis que impactam positivamente o mundo.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Desenvolvimento Web</h3>
+        <p>Sites modernos, responsivos e com alta performance para sua empresa se destacar.</p>
+      </div>
+      <div class="card">
+        <h3>Apps Mobile</h3>
+        <p>Aplicativos iOS e Android que entregam usabilidade e inovação para seus clientes.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoria Tech</h3>
+        <p>Planejamento estratégico, otimização de processos e automação inteligente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <h3>Projeto Alpha</h3>
+        <p>Plataforma de e-commerce com inteligência artificial de recomendação.</p>
+      </div>
+      <div class="card">
+        <h3>HorzApp</h3>
+        <p>App de organização de tarefas em equipe com foco em produtividade.</p>
+      </div>
+      <div class="card">
+        <h3>EpicEdu</h3>
+        <p>Sistema de ensino à distância gamificado e acessível para todos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <h2>Depoimentos</h2>
+    <div class="testimonials">
+      <div class="card">
+        <p>"A EpicHorz levou nosso projeto para outro nível. Profissionais incríveis e comprometidos."</p>
+        <strong>– Ana Clara, CEO da StartupX</strong>
+      </div>
+      <div class="card">
+        <p>"Ótimo atendimento, entregaram antes do prazo e com excelente qualidade."</p>
+        <strong>– Rafael Lima, Gerente de TI</strong>
+      </div>
+      <div class="card">
+        <p>"Sem dúvidas, a melhor empresa de tecnologia com quem já trabalhamos."</p>
+        <strong>– Marina Torres, Diretora de Marketing</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EpicHorz - Todos os direitos reservados.</p>
+    <p>contato@epichorz.com | +55 (61) 99999-9999</p>
+  </footer>
+
+</body>
+</html>
